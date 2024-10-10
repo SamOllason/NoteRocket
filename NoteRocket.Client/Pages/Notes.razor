@@ -1,8 +1,17 @@
 ﻿@page "/notes"
 
-<h3>Notes</h3>
-<NotePage/>
+<h1>Notes</h1>
+
+
+<ul>
+    @foreach(var note in notes)
+    {
+        <li>
+            @note.Title
+        </li>
+    }
+</ul>
 
 @code {
-
+    private List<Note> notes = NotesRepository.GetNotes();
 }

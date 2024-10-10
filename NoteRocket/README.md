@@ -6,6 +6,6 @@ Taking inspiration from this fantastic Udemy course: https://www.udemy.com/cours
 
 Milestones
 [x] Initial project creation and unit test project creation
-[] User can view a single hardcoded note
-[] User can see list of one single harcoded note in 'list of all notes'
-[] User can select the note from list and open note
+[x] User can see titles of a few harcoded notes in 'Notes' page held in local repo
+[] User can select a single note from list and open note in separate page to view contents
+[] User can edit and save changes to the note title and body
