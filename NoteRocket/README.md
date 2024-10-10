@@ -3,6 +3,7 @@ NoteRocket
 A fun application used to help me continue to develop my Blazor/C# skills.
 Taking inspiration from this fantastic Udemy course: https://www.udemy.com/course/blazor-deep-dive-from-beginner-to-advanced/learn
 
+See unit tests in [NoteRocketTests](https://github.com/SamOllason/NoteRocketTests).
 
 Milestones
 [x] Initial project creation and unit test project creation
