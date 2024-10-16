@@ -8,9 +8,19 @@
 
     @foreach(var category in Enum.GetValues<Category>())
     {
-        <button type="button" class="btn btn-primary" id=@($"button-{category}")>
-            @category
-        </button>
+        
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+
+                    <button type="button" class="btn btn-primary" id=@($"button-{category}")>
+                        @category
+                    </button>
+                </div>
+            </div>
+        </div>
+
         <text>&nbsp;</text>
     }
 
