@@ -2,17 +2,19 @@
 
 <h1>Notes</h1>
 
-<ul>
+
+
+<div class="container-fluid text-center">
+
     @foreach(var category in Enum.GetValues<Category>())
     {
-        <li>
-            <button id=@($"button-{category}")>
-                @category
-            </button>
-        </li>
+        <button type="button" class="btn btn-primary" id=@($"button-{category}")>
+            @category
+        </button>
+        <text>&nbsp;</text>
     }
 
-</ul>
+</div>
 
 <ul>
     @foreach(var note in notes)
