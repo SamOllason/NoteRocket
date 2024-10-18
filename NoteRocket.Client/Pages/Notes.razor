@@ -28,7 +28,7 @@
     @foreach (var note in notes)
     {
         <li>
-            <a href=@($"/notes/edit/{note.Id}")>@note.Title</a>
+            <a href="/notes/edit/@note.Id">@note.Title</a>
         </li>
     }
 </ul>
