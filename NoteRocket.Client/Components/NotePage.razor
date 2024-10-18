@@ -2,9 +2,24 @@
 
 @if(note != null)
 {
-    <h1>@note.Title</h1>
-    <p>@Id</p>
-    <p>@note.Body</p>
+    <EditForm Model="note">
+
+        <div class="row mb-3">
+            <div class="col-2">
+                <label class="col-form-label">Title</label>
+            </div>
+            <div class="col-6">
+                <InputText @bind-Value="note.Title" class="form-control"></InputText>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-8">
+                <InputTextArea @bind-Value="note.Body" class="form-control"></InputTextArea>
+            </div>
+        </div>
+
+    </EditForm>
 }
 
 <a href="/notes" class="btn btn-primary">Notes</a>
