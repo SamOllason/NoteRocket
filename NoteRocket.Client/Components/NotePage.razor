@@ -1,7 +1,12 @@
 ﻿@page "/notes/edit/{id:int}"
 
- <h1>@note.Title</h1>
-<p>@Id</p>
-<p>@note.Body</p>
+@if(note != null)
+{
+    <h1>@note.Title</h1>
+    <p>@Id</p>
+    <p>@note.Body</p>
+}
+
+<a href="/notes" class="btn btn-primary">Notes</a>
 
   @* <InputTextArea></InputTextArea> *@
