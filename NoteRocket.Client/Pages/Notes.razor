@@ -4,14 +4,12 @@
 
 
 
-<div class="container-fluid text-center">
+<div class="container-fluid row text-center">
 
     @foreach(var category in Enum.GetValues<Category>())
     {
-        
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+         <div class="col">
+            <div class="card" style="width: 9rem;">
                 <div class="card-body">
 
                     <button type="button" class="btn btn-primary" id=@($"button-{category}")>
@@ -27,10 +25,10 @@
 </div>
 
 <ul>
-    @foreach(var note in notes)
+    @foreach (var note in notes)
     {
         <li>
-            @note.Title
+            <a href=@($"/notes/edit/{note.Id}")>@note.Title</a>
         </li>
     }
 </ul>

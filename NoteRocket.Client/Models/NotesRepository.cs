@@ -6,11 +6,11 @@ public class NotesRepository
         {
             new Note {  Id = 1, Title = "Shopping list", Body = "carrot, broccoli...", Category = Category.Personal},
             new Note {  Id = 2, Title = "Learning list", Body = "C#", Category = Category.Learning },
-            new Note {  Id = 3, Title = "Holidays", Body = "Spain, France", Category = Category.Personal },
-            new Note {  Id = 4, Title = "Dog walks", Body = "Map link here...", Category = Category.Random },
+            new Note {  Id = 3, Title = "Holiday plans for Spain", Body = "Madrid ...", Category = Category.Personal },
+            new Note {  Id = 4, Title = "Dog walks around Bath", Body = "Map link here...", Category = Category.Personal },
         };
 
-         public static List<Note> GetNotes() => notes;
+    public static List<Note> GetNotes() => notes;
 }
 
 
