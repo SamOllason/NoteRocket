@@ -11,6 +11,11 @@ public class NotesRepository
         };
 
     public static List<Note> GetNotes() => notes;
+
+    public static Note? GetNoteById(int noteId)
+    {
+        return notes.FirstOrDefault(n => n.Id == noteId);
+    }
 }
 
 
