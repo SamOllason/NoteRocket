@@ -1,9 +1,6 @@
-﻿@page "/notes/edit/{Id:int}"
+﻿@page "/notes/edit/{id:int}"
 
-<h1>@note.Title</h1>
+@* <h1>@note.Title</h1> *@
+<p>@Id</p>
 
   @* <InputTextArea></InputTextArea> *@
-
-@code {
-    private Note note = new Note { Title = "Title 1", Body = "<b>NoteBody<b>" };
-}
