@@ -21,7 +21,8 @@ public partial class NotePage : ComponentBase
     }
     private void Submit()
     {
-
+        Console.WriteLine("Submit");
+        //NotesRepository.UpdateNote(id, note);
     }
 
 };

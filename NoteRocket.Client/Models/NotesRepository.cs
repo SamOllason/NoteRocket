@@ -16,6 +16,14 @@ public class NotesRepository
     {
         return notes.FirstOrDefault(n => n.Id == noteId);
     }
+
+    public string UpdateNote(int noteId, Note submittedNote)
+    {
+        //invoke extension method
+        //UpdateNoteById(noteId, submittedNote, notes)
+        return "updated";
+
+    }
 }
 
 
