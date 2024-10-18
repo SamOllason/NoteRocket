@@ -2,8 +2,9 @@
 
 @if(note != null)
 {
-    <EditForm Model="note">
-
+    <EditForm Model="note" FormName="formNotePage" OnSubmit="Submit">
+        <InputNumber @bind-Value="note.Id" hidden></InputNumber>
+        
         <div class="row mb-3">
             <div class="col-2">
                 <label class="col-form-label">Title</label>
@@ -19,7 +20,13 @@
             </div>
         </div>
 
+        <br/>
+
+        <button class="btn btn-primary" type="submit">Save</button>
+
     </EditForm>
 }
 
-<a href="/notes" class="btn btn-primary">Notes</a>
+<br />
+
+<a href="/notes" class="btn btn-primary">Close</a>
