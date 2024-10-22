@@ -29,7 +29,6 @@ public class NotesService : INotesService
             noteToUpdate.Title = submittedNote.Title;
             noteToUpdate.Body = submittedNote.Body;
         }
-
     }
 }
 
