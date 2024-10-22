@@ -8,6 +8,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveWebAssemblyComponents();
 
 
+builder.Services.AddSingleton<IStorageService, StorageService>();
 // We register our INotesService interface into our DI container and ask the container to give us an instance of the NotesService class whenever we request an INotesService.
 builder.Services.AddSingleton<INotesService, NotesService>();
 
