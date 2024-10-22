@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
 	.AddInteractiveWebAssemblyComponents();
 
+
+// We register our INotesService interface into our DI container and ask the container to give us an instance of the NotesService class whenever we request an INotesService.
 builder.Services.AddSingleton<INotesService, NotesService>();
 
 var app = builder.Build();

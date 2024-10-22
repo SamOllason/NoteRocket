@@ -24,9 +24,15 @@ public class NotesService : INotesService
 
     public void UpdateNote(int noteId, Note submittedNote)
     {
-        //invoke extension method
-        //UpdateNoteById(noteId, submittedNote, notes)
-        //return "updated";
+        if (noteId != submittedNote.Id)
+            return;
+
+        var noteToUpdate = Notes.FirstOrDefault(n => n.Id == noteId);
+        if (noteToUpdate is not null)
+        {
+            noteToUpdate.Title = submittedNote.Title;
+            noteToUpdate.Body = submittedNote.Body;
+        }
 
     }
 }

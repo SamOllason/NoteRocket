@@ -12,7 +12,7 @@ public partial class NotesHome : ComponentBase
     protected override void OnInitialized()
     {
         // only retrieve data from the repo if Notes is not null
-        // to avoid overwriting the data submitted in the form!
+        // to avoid overwriting (TODO: is this needed?)
         Notes ??= NotesService.GetNotes();
     }
 }
