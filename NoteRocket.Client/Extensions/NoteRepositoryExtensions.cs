@@ -5,8 +5,8 @@ namespace NoteRocket.Client.Extensions;
 
 public static class NoteRepositoryExtensions
 {
-    public static Note UpdateNoteById(this NotesRepository notesRepository, int noteId, Note submittedNote, List<Notes> notes)
-    {
-        return submittedNote;
-    }
+	public static Note UpdateNoteById(this NotesService notesRepository, int noteId, Note submittedNote, List<NotesHome> notes)
+	{
+		return submittedNote;
+	}
 }

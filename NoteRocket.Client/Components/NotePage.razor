@@ -3,6 +3,7 @@
 @if(note != null)
 {
     <EditForm Model="note" FormName="formNotePage" OnSubmit="Submit">
+        
         <InputNumber @bind-Value="note.Id" hidden></InputNumber>
         
         <div class="row mb-3">

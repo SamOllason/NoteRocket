@@ -1,6 +1,6 @@
 ﻿@page "/notes"
 
-<h1>Notes</h1>
+<h1>Notes Home</h1>
 
 <div class="container-fluid row text-center">
 
@@ -23,14 +23,19 @@
 </div>
 
 <ul>
-    @foreach (var note in notes)
+    
+    @if(Notes is not null)
     {
-        <li>
-            <a href="/notes/edit/@note.Id">@note.Title</a>
-        </li>
+        @foreach (var note in Notes)
+        {
+            <li>
+                <a href="/notes/edit/@note.Id">@note.Title</a>
+            </li>
+        }
     }
+
 </ul>
 
 @code {
-    private List<Note> notes = NotesRepository.GetNotes();
+
 }
