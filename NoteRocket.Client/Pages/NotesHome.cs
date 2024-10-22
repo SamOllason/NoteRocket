@@ -16,4 +16,13 @@ public partial class NotesHome : ComponentBase
         // to avoid overwriting (TODO: is this needed?)
         Notes ??= NotesService.GetNotes();
     }
+    private void AddNote()
+    {
+        // add new note with default title
+        // navigate user to that new note
+        // call NotesService.GetNotes(); to get latest notes
+
+        NotesService.AddNote();
+
+    }
 }

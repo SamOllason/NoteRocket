@@ -30,6 +30,17 @@ public class NotesService : INotesService
             noteToUpdate.Body = submittedNote.Body;
         }
     }
+
+    public void AddNote()
+    {
+
+        // get maxId
+        // create new note with incremented id
+        // add to notes collection
+
+
+
+    }
 }
 
 
