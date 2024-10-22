@@ -1,4 +1,6 @@
-﻿namespace NoteRocket.Client.Models;
+﻿using NoteRocket.Client.Models;
+
+namespace NoteRocket.Client.Services;
 
 public class NotesService : INotesService
 {

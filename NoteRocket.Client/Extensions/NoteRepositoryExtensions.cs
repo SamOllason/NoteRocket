@@ -1,5 +1,6 @@
 ﻿using NoteRocket.Client.Models;
 using NoteRocket.Client.Pages;
+using NoteRocket.Client.Services;
 
 namespace NoteRocket.Client.Extensions;
 
