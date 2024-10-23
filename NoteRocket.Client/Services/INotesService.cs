@@ -8,6 +8,6 @@ public interface INotesService
     List<Note> GetNotes();
     Note? GetNoteById(int noteId);
     void UpdateNote(int noteId, Note submittedNote);
-    void AddNote();
+    int AddNote();
 
 }
