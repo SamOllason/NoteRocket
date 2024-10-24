@@ -33,17 +33,20 @@ public class NotesService : INotesService
 
     public int AddNote()
     {
-        var maxId = Notes.Max(n => n.Id);
-        var maxItem = Notes.Where(n => n.Id == maxId).ToList().FirstOrDefault();
-
-        var newNoteId = maxId++;
-
-        if (maxItem is not null)
+        if (Notes.Count > 0)
         {
-            Notes.Add(new Note { Id = newNoteId, Title = "New note", Body = "..." });
-        }
+            var maxId = Notes.Max(n => n.Id);
+            var newNoteId = maxId + 1;
 
-        return newNoteId;
+            Notes.Add(new Note { Id = newNoteId, Title = "New note", Body = "..." });
+
+            return newNoteId;
+        }
+        else
+        {
+            Notes.Add(new Note { Id = 0, Title = "New note", Body = "..." });
+            return 0;
+        }
     }
 }
 
